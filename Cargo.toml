@@ -1,0 +1,6 @@
+[package]
+name = "sapper_request_basic_logger"
+version = "0.1.0"
+authors = ["Mike Tang <miketang84@outlook.com>"]
+
+[dependencies]
