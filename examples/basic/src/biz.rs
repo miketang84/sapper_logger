@@ -1,9 +1,9 @@
 
 use sapper::Result;
-use sapper::SModule;
+use sapper::SapperModule;
 use sapper::Request;
 use sapper::Response;
-use sapper::SRouter;
+use sapper::SapperRouter;
 
 #[derive(Clone)]
 pub struct Biz;
@@ -24,7 +24,7 @@ impl Biz {
 }
 
 // set before, after middleware, and add routers
-impl SModule for Biz {
+impl SapperModule for Biz {
     
     fn before(&self, req: &mut Request) -> Result<()> {
         println!("{}", "in Biz before.");
@@ -38,7 +38,7 @@ impl SModule for Biz {
     }
     
     // here add routers ....
-    fn router(&self, router: &mut SRouter) -> Result<()> {
+    fn router(&self, router: &mut SapperRouter) -> Result<()> {
         // need to use Router struct here
         // XXX: here could not write as this, should record first, not parse it now
         
