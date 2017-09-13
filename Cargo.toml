@@ -2,9 +2,11 @@
 name = "sapper_logger"
 version = "0.1.0"
 authors = ["Mike Tang <miketang84@outlook.com>"]
+license = "MIT"
+description = "Basic logger module for sapper web framework."
 
 [dependencies]
-sapper = { git="https://github.com/sappworks/sapper" }
+sapper = "0.1"
 time = "0.1.37"
 log = "0.3.7"
 
